@@ -1,15 +1,14 @@
-// ==UserScript==
 // @name        Gigachader
 // @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
 // @author Scorbunny
 // @namespace   http://tampermonkey.net/
-// @version     1.0
+// @version     1.1
 // @description Zgigachaduj wszyskie zdjęcia na stronach
 // @include http://*/*
 // @include https://*/*
 // @grant       GM_addStyle
-// @updateURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
-// @downloadURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
+// @updateURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
+// @downloadURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
 // ==/UserScript==
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,5 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     img.style.height = originalHeight + 'px';
   });
 });
+
 
 // Rozszerzenie to działa na TamperMonkey
