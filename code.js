@@ -1,5 +1,7 @@
 // ==UserScript==
 // @name        Gigachader
+// @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
+// @author Scorbunny
 // @namespace   http://tampermonkey.net/
 // @version     1.0
 // @description Zgigachaduj wszyskie zdjęcia na stronach
