@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Gigachader
+// @name Gigachader
 // @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
 // @author Scorbunny
 // @namespace   https://github.com/Scorbunny10/Gigachader/tree/main
