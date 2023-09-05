@@ -31,24 +31,20 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
     'use strict';
 
-    // Tworzenie przycisku aktualizacji
     var updateButton = document.createElement('button');
     updateButton.innerHTML = 'Aktualizuj Skrypt';
     updateButton.style.marginTop = '10px';
     updateButton.addEventListener('click', function() {
-        // Usuwanie skryptu
         var scriptElement = document.querySelector('script[src$="code.js"]');
         if (scriptElement) {
             scriptElement.remove();
         }
 
-        // Pobieranie i dodawanie nowej aktualizacji
         var newScript = document.createElement('script');
-        newScript.src = 'https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js'; // Tutaj podaj link do nowej aktualizacji
+        newScript.src = 'https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js'; /
         document.head.appendChild(newScript);
     });
 
-    // Dodawanie przycisku pod skryptem
     var scriptElement = document.querySelector('script[src$="code.js"]');
     if (scriptElement) {
         scriptElement.parentNode.insertBefore(updateButton, scriptElement.nextSibling);
