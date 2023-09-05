@@ -1,8 +1,9 @@
+// ==UserScript==
 // @name        Gigachader
 // @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
 // @author Scorbunny
-// @namespace   http://tampermonkey.net/
-// @version     1.1
+// @namespace   https://github.com/Scorbunny10/Gigachader/tree/main
+// @version     1.2
 // @description Zgigachaduj wszyskie zdjęcia na stronach
 // @include http://*/*
 // @include https://*/*
@@ -23,6 +24,5 @@ document.addEventListener('DOMContentLoaded', function() {
     img.style.height = originalHeight + 'px';
   });
 });
-
 
 // Rozszerzenie to działa na TamperMonkey
