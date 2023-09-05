@@ -23,4 +23,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//Dodaj ten skrypt do Tampermonkey
+// Rozszerzenie to działa na TamperMonkey
