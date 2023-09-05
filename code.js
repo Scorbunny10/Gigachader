@@ -8,8 +8,8 @@
 // @include http://*/*
 // @include https://*/*
 // @grant       GM_addStyle
-// @updateURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
-// @downloadURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
+// @updateURL https://github.com/Scorbunny10/Gigachader/blob/b0d295b7d0f6db3f1a2dce49f94500cff8cebf2d/code.js
+// @downloadURL https://github.com/Scorbunny10/Gigachader/blob/b0d295b7d0f6db3f1a2dce49f94500cff8cebf2d/code.js
 // ==/UserScript==
 
 document.addEventListener('DOMContentLoaded', function() {
