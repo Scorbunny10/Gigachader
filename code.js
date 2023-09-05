@@ -8,6 +8,8 @@
 // @include http://*/*
 // @include https://*/*
 // @grant       GM_addStyle
+// @updateURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/Code.js
+// @downloadURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/Code.js
 // ==/UserScript==
 
 document.addEventListener('DOMContentLoaded', function() {
