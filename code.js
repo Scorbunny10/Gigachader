@@ -21,4 +21,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//Add it in Tampermonkey
+//Dodaj ten skrypt do Tampermonkey
