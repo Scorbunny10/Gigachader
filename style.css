@@ -46,3 +46,6 @@ button{
     transition: 0.5s;
     scale:1;
 }
+a {
+    color:fff;
+}
