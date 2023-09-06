@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Instalacja skryptu Tampermonkey</title>
+    <title>Strona z kodem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        code {
+            display: block;
+            background-color: #f6f8fa;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Instalacja skryptu Tampermonkey</h1>
+    <h1>Kod na GitHub</h1>
 
-    <button onclick="installScript()">Instaluj skrypt</button>
+    <h2>Nazwa pliku: code.js</h2>
+    <code>
+        function helloWorld() {
+    </code>
 
-    <script>
-        function installScript() {
-            const scriptUrl = 'https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js';
-
-            const script = document.createElement('script');
-            script.src = scriptUrl;
-            document.head.appendChild(script);
-        }
-    </script>
 </body>
 </html>
