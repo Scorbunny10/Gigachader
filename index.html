@@ -1,58 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gigachader</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        code {
-            display: block;
-            background-color: #f6f8fa;
-            padding: 10px;
-            border-radius: 4px;
-            overflow-x: auto;
-        }
-    </style>
+    <title>Aktualizacja skryptu</title>
 </head>
 <body>
-    <h1>Gigachader \/</h1>
+    <h1>Aktualizacja skryptu</h1>
 
-    <h2>Skrypt Tampermonkey:</h2>
-    <code>
-// ==UserScript==
-// @name Gigachader
-// @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
-// @author Scorbunny
-// @namespace   https://github.com/Scorbunny10/Gigachader/tree/main
-// @version     1.2
-// @description Zgigachaduj wszyskie zdjęcia na stronach
-// @include http://*/*
-// @include https://*/*
-// @grant GM_addStyle
-// @updateURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
-// @downloadURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
-// @homepage https://raw.github.com/Scorbunny10/Gigachader/tree/main
-// @contactURL https://github.com/Scorbunny10/Gigachader/issues
-// @supportURL https://github.com/Scorbunny10/Gigachader/issues
-// ==/UserScript==
-
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('img');
-
-  images.forEach(img => {
-    const originalWidth = img.offsetWidth;
-    const originalHeight = img.offsetHeight;
-
-    img.src = 'https://media.tenor.com/epNMHGvRyHcAAAAC/gigachad-chad.gif';
-    img.style.width = originalWidth + 'px';
-    img.style.height = originalHeight + 'px';
-  });
-});
-            console.log("Gigachaded");
-    </code>
-
+    <script>
+        fetch('https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js')
+            .then(response => response.text())
+            .then(script => {
+                GM.setValue('nazwaTwojegoSkryptu', script);
+                alert('Skrypt został zaktualizowany!');
+            })
+            .catch(error => {
+                console.error('Wystąpił błąd podczas aktualizacji skryptu:', error);
+            });
+    </script>
 </body>
 </html>
