@@ -6,7 +6,7 @@ html, body {
 body {
     background-color: #212121;
     font-family: sans-serif, Verdana;
-    color: #fff;
+    color: #ffff;
     display: flex;
     flex-direction: column;
 }
