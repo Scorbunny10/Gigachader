@@ -1,10 +1,9 @@
 /* style.css */
 body {
     background-color: #212121;
-    font-family: Fantasy, bold;
+    font-family: Fantasy;
 }
 
 h1 {
     color: #f;
-  font-weight: bold;
 }
