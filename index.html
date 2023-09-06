@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Strona do aktualizacji kodu</title>
+    <title>Udostępnienie nowego skryptu</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <textarea id="kod" rows="10" cols="50" readonly></textarea>
-    <button id="aktualizuj" disabled onclick="aktualizujKod()">Aktualizuj</button>
+    <h1>Udostępnienie nowego skryptu</h1>
+    <button id="pobierz">Pobierz skrypt</button>
 
     <script>
-        function aktualizujKod() {
-            var kod = document.getElementById("kod").value;
-// ==UserScript==
+        $(document).ready(function() {
+            $('#pobierz').click(function() {
+                // ==UserScript==
 // @name Gigachader
 // @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
 // @author Scorbunny
@@ -39,8 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
     img.style.height = originalHeight + 'px';
   });
 });
-            console.log("Kod został zaktualizowany: " + kod);
-        }
+                console.log('Skrypt został pobrany i zastosowany w Tampermonkey');
+            });
+        });
     </script>
 </body>
 </html>
