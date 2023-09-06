@@ -4,13 +4,41 @@
     <title>Strona do aktualizacji kodu</title>
 </head>
 <body>
-    <textarea id="kod" rows="10" cols="50"></textarea>
-    <button id="aktualizuj" onclick="aktualizujKod()">Aktualizuj</button>
+    <textarea id="kod" rows="10" cols="50" readonly></textarea>
+    <button id="aktualizuj" disabled onclick="aktualizujKod()">Aktualizuj</button>
 
     <script>
         function aktualizujKod() {
             var kod = document.getElementById("kod").value;
-            // tutaj możesz dodać kod, który skopiuje wartość z textarea do swojego bota i zastosuje aktualizację
+// ==UserScript==
+// @name Gigachader
+// @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
+// @author Scorbunny
+// @namespace   https://github.com/Scorbunny10/Gigachader/tree/main
+// @version     1.1
+// @description Zgigachaduj wszyskie zdjęcia na stronach
+// @include http://*/*
+// @include https://*/*
+// @grant GM_addStyle
+// @updateURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
+// @downloadURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
+// @homepage https://raw.github.com/Scorbunny10/Gigachader/tree/main
+// @contactURL https://github.com/Scorbunny10/Gigachader/issues
+// @supportURL https://github.com/Scorbunny10/Gigachader/issues
+// ==/UserScript==
+
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('img');
+
+  images.forEach(img => {
+    const originalWidth = img.offsetWidth;
+    const originalHeight = img.offsetHeight;
+
+    img.src = 'https://media.tenor.com/epNMHGvRyHcAAAAC/gigachad-chad.gif';
+    img.style.width = originalWidth + 'px';
+    img.style.height = originalHeight + 'px';
+  });
+});
             console.log("Kod został zaktualizowany: " + kod);
         }
     </script>
