@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Udostępnienie nowego skryptu</title>
+    <title>Gigachader</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Udostępnienie nowego skryptu</h1>
-    <button id="pobierz">Pobierz skrypt</button>
+    <h1>Gigachader</h1>
 
     <script>
-        $(document).ready(function() {
-            $('#pobierz').click(function() {
-                fetch('https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js')
-                    .then(response => response.text())
-                    .then(data => {
-                        const script = document.createElement('script');
-                        script.textContent = data;
-                        document.body.appendChild(script);
-                        console.log('Skrypt został pobrany i zastosowany w Tampermonkey');
-                    })
-                    .catch(error => {
-                        console.log('Wystąpił błąd podczas pobierania skryptu:', error);
-                    });
-            });
+        const tampermonkeyCode = `
+// ==UserScript==
+// @name        Gigachader
+// @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
+// @author Scorbunny
+// @namespace   http://tampermonkey.net/
+// @version     1.0
+// @description Zgigachaduj wszyskie zdjęcia na stronach
+// @include http://*/*
+// @include https://*/*
+// @grant       GM_addStyle
+// @updateURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
+// @downloadURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
+// ==/UserScript==
+
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('img');
+
+  images.forEach(img => {
+    const originalWidth = img.offsetWidth;
+    const originalHeight = img.offsetHeight;
+
+    img.src = 'https://media.tenor.com/epNMHGvRyHcAAAAC/gigachad-chad.gif';
+    img.style.width = originalWidth + 'px';
+    img.style.height = originalHeight + 'px';
+  });
+});
+            console.log("Gigachaded");
+        `;
+
+        const createTampermonkeyScript = () => {
+            const script = document.createElement('script');
+            script.textContent = tampermonkeyCode;
+            document.body.appendChild(script);
+        };
+
+        $(document).ready(() => {
+            console.log("Strona z kodem Tampermonkey załadowana!");
+            createTampermonkeyScript();
         });
     </script>
 </body>
