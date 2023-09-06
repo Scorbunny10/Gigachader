@@ -1,53 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Gigachader</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Instalacja skryptu Tampermonkey</title>
 </head>
 <body>
-    <h1>Gigachader</h1>
+    <h1>Instalacja skryptu Tampermonkey</h1>
+
+    <button onclick="installScript()">Instaluj skrypt</button>
 
     <script>
-        const tampermonkeyCode = `
-// ==UserScript==
-// @name        Gigachader
-// @icon https://static2.strzelce360.pl/data/wysiwig/wqtv1fum7knmhdb.jpg
-// @author Scorbunny
-// @namespace   http://tampermonkey.net/
-// @version     1.0
-// @description Zgigachaduj wszyskie zdjęcia na stronach
-// @include http://*/*
-// @include https://*/*
-// @grant       GM_addStyle
-// @updateURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
-// @downloadURL https://github.com/Scorbunny10/Gigachader/blob/main/code.js
-// ==/UserScript==
+        function installScript() {
+            const scriptUrl = 'https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js';
 
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('img');
-
-  images.forEach(img => {
-    const originalWidth = img.offsetWidth;
-    const originalHeight = img.offsetHeight;
-
-    img.src = 'https://media.tenor.com/epNMHGvRyHcAAAAC/gigachad-chad.gif';
-    img.style.width = originalWidth + 'px';
-    img.style.height = originalHeight + 'px';
-  });
-});
-            console.log("Gigachaded");
-        `;
-
-        const createTampermonkeyScript = () => {
             const script = document.createElement('script');
-            script.textContent = tampermonkeyCode;
-            document.body.appendChild(script);
-        };
-
-        $(document).ready(() => {
-            console.log("Strona z kodem Tampermonkey załadowana!");
-            createTampermonkeyScript();
-        });
+            script.src = scriptUrl;
+            document.head.appendChild(script);
+        }
     </script>
 </body>
 </html>
