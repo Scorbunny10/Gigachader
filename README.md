@@ -8,7 +8,7 @@ Gigachader to prosty skrypt stworzony przy pomocy sztucznej inteligencji (ai/si)
  Zainstaluj wtyczkę Tampermonkey
  Klikacie na Tampermonkey na pasku z rozszerzeniami
  Klikacie "Dodaj nowy skrypt..."
- Usuwacie cały text i wklejacie kod z mojego githuba który jest na samym dole strony
+ Usuwacie cały text i wklejacie kod z mojego githuba który jest na samym dole strony(code.js)
  Zmieniacie na dowolną zakładkę i klikacie ponownie Tampermonkey na pasku rozszerzeń
  Klikacie Gigachader by włączyć
  Gotowe, możecie cieszyć się swoimi nowymi zdjęciami
