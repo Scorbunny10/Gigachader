@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aktualizacja skryptu</title>
+    <title>Gigachader</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Aktualizacja skryptu</h1>
-
-    <script>
-        fetch('https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js')
-            .then(response => response.text())
-            .then(script => {
-                GM.setValue('nazwaTwojegoSkryptu', script);
-                alert('Skrypt został zaktualizowany!');
-            })
-            .catch(error => {
-                console.error('Wystąpił błąd podczas aktualizacji skryptu:', error);
-            });
-    </script>
+    <h1>GigaChader<\h1>
+    <script src="script.js"></script>
 </body>
 </html>
