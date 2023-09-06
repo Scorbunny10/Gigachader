@@ -8,25 +8,20 @@
 // @include http://*/*
 // @include https://*/*
 // @grant GM_addStyle
-// @updateURL https://scorbunny10.github.io/Gigachader/
-// @downloadURL https://scorbunny10.github.io/Gigachader/
+// @updateURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
+// @downloadURL https://raw.githubusercontent.com/Scorbunny10/Gigachader/main/code.js
 // @homepage https://raw.github.com/Scorbunny10/Gigachader/tree/main
 // @supportURL https://github.com/Scorbunny10/Gigachader/issues
 // ==/UserScript==
-
 document.addEventListener('DOMContentLoaded', function() {
   const images = document.querySelectorAll('img');
-
   images.forEach(img => {
     const originalWidth = img.offsetWidth;
     const originalHeight = img.offsetHeight;
-
     img.src = 'https://media.tenor.com/epNMHGvRyHcAAAAC/gigachad-chad.gif';
     img.style.width = originalWidth + 'px';
     img.style.height = originalHeight + 'px';
   });
 });
-
-            console.log("Gigachaded");
-
+console.log("Gigachaded");
 // Rozszerzenie to działa na TamperMonkey
