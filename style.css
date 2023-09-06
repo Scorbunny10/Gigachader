@@ -1,7 +1,7 @@
 /* style.css */
 body {
     background-color: #212121;
-    font-family: Fantasy;
+    font-family: Fantasy, bold;
 }
 
 h1 {
