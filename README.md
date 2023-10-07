@@ -1,5 +1,5 @@
 # Gigachader
-# https://scorbunny10.github.io/Gigachader/
+# https://gigachader.glitch.me/
 Gigachader to prosty skrypt stworzony przy pomocy sztucznej inteligencji (ai/si) zamieniający każde zdjęcie na  stronie w gifa z gigachadem. Skrypt ten działa przy użyciu wtyczki Tampermonkey.
 
  Skrypt zezwala na wymianę gifu poprzez zmianę linku gifu na który zamieniane są zdjęcia, no ale przecież bez  gigachada to już nie to samo :D
